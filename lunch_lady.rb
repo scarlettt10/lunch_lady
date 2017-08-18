@@ -1,10 +1,11 @@
 require "pry"
+require_relative "Food"
 
 # food and price Hash
 #use class
 # .map functions to total up prices
 # - the user chooses from a list of main dishes
-# - the user chooses 2 side dish items
+# - the user chooses 1 side dish 1 dessert items
 # - computer repeats users order
 # - computer totals lunch items and displays total
 
@@ -19,19 +20,34 @@ require "pry"
 
 
 
-#class
+#classes
 
-#create main class item and price?
-#class main dish and price
-#class side and price
-#class dessert and price
-
-class Lunch
-  attr_accessor :item, :price
-  def initialize(item, price)
-    @item = item
-    @price = price
-    
-
+#class lunch (main menu)
+#class food
+class Lunch < Food
+  attr_accessor :item, :side, :dessert, :price
+  
+  def initialize
+    super(item, side, dessert, price)
+  menu
   end 
+
+  def menu
+    puts "Lunch Time!"
+    puts "What do you want for Main?"
+      # binding.pry
+      @item = gets.strip  
+    puts "What do you want for Side?"
+      @side = gets.strip  
+    puts "What do you want for Dessert?"
+      @dessert = gets.strip  
+       
+  end
+
+  
 end
+
+lunch_1 = Lunch.new
+
+
+# binding.pry
