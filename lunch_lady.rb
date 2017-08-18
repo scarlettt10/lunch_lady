@@ -9,3 +9,29 @@ require "pry"
 # - computer totals lunch items and displays total
 
 
+
+#main menu
+
+#choice inputs
+
+#total items and price
+
+
+
+
+#class
+
+#create main class item and price?
+#class main dish and price
+#class side and price
+#class dessert and price
+
+class Lunch
+  attr_accessor :item, :price
+  def initialize(item, price)
+    @item = item
+    @price = price
+    
+
+  end 
+end
