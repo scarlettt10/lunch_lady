@@ -1,3 +1,6 @@
+#this is not working, i was attempting to use a class, but i think i was using it wrong-
+#-here is some work, but far from done
+
 require "pry"
 require_relative "Food"
 
